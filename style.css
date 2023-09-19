@@ -1,0 +1,44 @@
+div#app{
+  width: 90%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 7rem;
+}
+img {
+  width: 100px;
+  height: auto;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+h2 {
+  margin-bottom: 0;
+  font-style: normal;
+  font-weight: 500;
+}
+h4 {
+  font-style: normal;
+  font-weight: 100;
+  margin: 10px;
+}
+button {
+  background-color: black;
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  cursor: pointer;
+}
+.male {
+  background-color: black;
+  border: 2px solid black;
+}
+
+.female {
+  background-color: pink;
+  border: 2px solid pink;
+}
