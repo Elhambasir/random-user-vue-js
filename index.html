@@ -4,17 +4,22 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css" />
+
   <title>Document</title>
 </head>
 <body>
-  <div id="app">
-    <img v-bind:src="picture" v-bind:alt="firstName" :class="gender"/>
+  <div id="app" class="container">
+    <div class="card d-flex justify-content-around p-3 align-items-center gap-2" >
+      <img v-bind:src="picture" v-bind:alt="firstName" :class="gender"/>
     <h2>{{firstName}} {{lastName}}</h2>
     <h4>Email: {{email}}</h4>
-    <button v-on:click="getUser()" :class="gender">Get Random User</button>
+    <button v-on:click="getUser()" class="gender btn btn-primary">Get Random User</button>
+    </div>
   </div>
   <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
   <script src="app.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
 </body>
 </html>
